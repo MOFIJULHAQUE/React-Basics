@@ -9,6 +9,7 @@ export class BasicsClass extends Component {
             // color: "red",
             // year: 1964,
             isToggleOn: false,
+            name: "Mofijul",
         }
     }
 
@@ -17,6 +18,13 @@ export class BasicsClass extends Component {
             isToggleOn: !this.state.isToggleOn,
         })
     }
+
+    dataUpdate = () => {
+        this.setState({
+            name: this.state = "Haque"
+        })
+    }
+
     render() {
 
         return (
@@ -27,6 +35,8 @@ export class BasicsClass extends Component {
                     //         <h1>this {this.state.year} is a class {this.state.color} component {this.props.place} </h1>
                 }
                 <button onClick={this.handleClick}> {this.state.isToggleOn ? "ON" : "OFF"} </button>
+                <h1>{this.state.name}</h1>
+                <button onClick={() => { this.dataUpdate() }} >Data Update</button>
 
 
             </div>

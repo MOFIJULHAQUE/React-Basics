@@ -18,6 +18,8 @@ const Parent = () => {
         //send data to child
 
         <>
+            <h1>-----------------------------------</h1>
+            <h1>↓</h1>
             <h1>{childData}</h1>
             <Child getDataFromChild={getDataFromChild} />
         </>

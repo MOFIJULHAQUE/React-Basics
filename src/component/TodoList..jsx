@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const TodoList = (props) => {
-
     const [text, setText] = useState("");
     return (
         <>
@@ -15,12 +14,10 @@ const TodoList = (props) => {
             />
             <button
                 onClick={() => {
-                    props.inputdata(text)
+                    props.inputdata(text);
                 }}
             >ADD Todo</button>
-
-
         </>
     )
 }
-export default TodoList
+export default TodoList;

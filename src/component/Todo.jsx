@@ -3,6 +3,7 @@ import TodoList from "./TodoList.";
 
 const Todo = () => {
     const [data, setData] = useState([]);
+    
     const inputdata = (input) => {
         // console.log([...data, input]);
         setData([...data, input]);

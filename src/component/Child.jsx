@@ -1,17 +1,13 @@
 import React,{useState} from 'react'
 
 const Child=(props)=> {
-const [childData,setChildData]=useState("child data");
+const [dataC,setData]=useState("child <----> data");
     return (
-        <div>
-            
+        <div>  
         <h1>Send Child data to parent </h1>
-            
-
             <button onClick={()=>{
-                props.getDataFromChild(childData)
+                props.getDataFromChild(dataC);
             }}>Send child data to parent </button>
-        
         </div>
     )
 }

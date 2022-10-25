@@ -7,7 +7,7 @@ const BasicForm = () => {
     const [tnc, setTnc] = useState(false);
 
     const getFormData = (e) => {
-        console.log(name,option,tnc);
+        console.log(name, option, tnc);
         e.preventDefault();
     }
 
@@ -15,7 +15,7 @@ const BasicForm = () => {
         <>
             <h1>Handle Form in React</h1>
             <form onChange={getFormData}>
-                <input type="text" placeholder="Enter your Name" onChange={(e)=>setName(e.target.value)}/><br /><br />
+                <input type="text" placeholder="Enter your Name" onChange={(e) => setName(e.target.value)} /><br /><br />
                 <select onChange={(e) => setOption(e.target.value)} >
                     <option>Select the Option</option>
                     <option>Mango</option>
@@ -26,7 +26,6 @@ const BasicForm = () => {
             </form>
 
 
-            e.map((name,option,tnc)=>)
 
             <h1>-----------------------------------</h1>
         </>

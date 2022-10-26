@@ -16,6 +16,7 @@ import ComponentWillUnmount1 from "./component/ComponentWillUnmount/ComponentWil
 //Hooks
 import UseStateHook from "./component/React_Hooks/UseStateHook";
 import UseEffectHuk from "./component/React_Hooks/UseEffectHuk";
+import UseMemoHook from "./component/React_Hooks/UseMemoHook"
 
 //BootStrap
 import BootStrapComp from "./component/BootStrapCOMP/BootStrapComp";
@@ -30,6 +31,12 @@ import Component1 from "./component/ResuableComponent/Componet1";
 
 //ChildToParent
 import ParentComp from "./component/ChildToParent/ParentComp";
+
+//Pure Component
+import Pure_Component from "./component/PureComponent/Pure_Component"
+
+
+
 function App() {
   const parentData = () => {
     alert("Data from paren(APP.js)");
@@ -56,6 +63,7 @@ function App() {
       {/* Hooks */}
       <UseStateHook />
       <UseEffectHuk />
+      <UseMemoHook/>
 
       {/* BootStrap */}
       <BootStrapComp />
@@ -70,6 +78,9 @@ function App() {
 
       {/* ChildToParent */}
       <ParentComp />
+
+      {/* Pure Component */}
+      <Pure_Component/>
     </div>
   );
 }

@@ -1,0 +1,11 @@
+(1)Ref is used in class component and useRef is used in functional component.
+Both have same function.
+(2) Refs are a function provided by React to access the DOM element and the React element that you might have created on your own. They are used in cases where we want to change the value of a child component, without making use of props and all. They also provide us with good functionality as we can use callbacks with them. 
+(3) --When to use refs:  
+Helpful when using third party libraries.
+Helpful in animations.
+
+--When not to use refs :
+Should not be used with functional components because they don’t have instances.
+Not to be used on things that can be done declaratively.
+ 

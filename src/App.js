@@ -16,7 +16,8 @@ import ComponentWillUnmount1 from "./component/ComponentWillUnmount/ComponentWil
 //Hooks
 import UseStateHook from "./component/React_Hooks/UseStateHook";
 import UseEffectHuk from "./component/React_Hooks/UseEffectHuk";
-import UseMemoHook from "./component/React_Hooks/UseMemoHook"
+import UseMemoHook from "./component/React_Hooks/UseMemoHook";
+import UseREF from "./component/React_Hooks/UseREF";
 
 //BootStrap
 import BootStrapComp from "./component/BootStrapCOMP/BootStrapComp";
@@ -33,9 +34,17 @@ import Component1 from "./component/ResuableComponent/Componet1";
 import ParentComp from "./component/ChildToParent/ParentComp";
 
 //Pure Component
-import Pure_Component from "./component/PureComponent/Pure_Component"
+import Pure_Component from "./component/PureComponent/Pure_Component";
 
+//Ref
+import REF from "./component/Ref/REF";
 
+//Forward ref
+import ParentForwardFolder from "./component/ForwardRef/ParentForwardFolder";
+
+//Types of Components
+import ControlledComponent from "./component/ComponentTYPES/ControlledComponent";
+import UncontrolledComponent from "./component/ComponentTYPES/UncontrolledComponent";
 
 function App() {
   const parentData = () => {
@@ -53,7 +62,7 @@ function App() {
       <HideAndShowElement />
       <BasicForm />
       <Child1 data={parentData} />
-      
+
       {/* //life cycle methode  */}
       <ComponentDidmount />
       <Component_Did_Update />
@@ -63,7 +72,8 @@ function App() {
       {/* Hooks */}
       <UseStateHook />
       <UseEffectHuk />
-      <UseMemoHook/>
+      <UseMemoHook />
+      <UseREF />
 
       {/* BootStrap */}
       <BootStrapComp />
@@ -80,7 +90,17 @@ function App() {
       <ParentComp />
 
       {/* Pure Component */}
-      <Pure_Component/>
+      <Pure_Component />
+
+      {/* Ref */}
+      <REF />
+
+      {/* Forward ref */}
+      <ParentForwardFolder />
+
+      {/* Types of Components */}
+      <ControlledComponent />
+      <UncontrolledComponent />
     </div>
   );
 }

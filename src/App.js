@@ -46,6 +46,12 @@ import ParentForwardFolder from "./component/ForwardRef/ParentForwardFolder";
 import ControlledComponent from "./component/ComponentTYPES/ControlledComponent";
 import UncontrolledComponent from "./component/ComponentTYPES/UncontrolledComponent";
 
+//HOC
+import HOC1 from "./component/HOC/HOC1"
+
+//React Routers
+import Basics from "./component/React_RouTers/Basics"
+
 function App() {
   const parentData = () => {
     alert("Data from paren(APP.js)");
@@ -101,6 +107,13 @@ function App() {
       {/* Types of Components */}
       <ControlledComponent />
       <UncontrolledComponent />
+
+      {/* HOC */}
+      <HOC1/>
+
+      {/* React Routers */}
+
+      <Basics/>
     </div>
   );
 }

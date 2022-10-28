@@ -18,7 +18,7 @@ const UseMemoHook = () => {
       console.log("inside function");
       return count * 4;
     },
-    [count]
+    [count] 
   ); //with count dependency on use memoizing function to check data re rendering
 
   return (

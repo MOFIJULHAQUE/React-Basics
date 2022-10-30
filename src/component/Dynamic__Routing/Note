@@ -1,0 +1,2 @@
+//With Dynamic routing, we can use route changes as the conditions and render components without changing the layouts or pages completely.
+//Nested routing is not a unique thing to dynamic routing. But with dynamic routing, we can easily configure nesting routing for our applications.

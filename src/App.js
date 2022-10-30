@@ -47,10 +47,17 @@ import ControlledComponent from "./component/ComponentTYPES/ControlledComponent"
 import UncontrolledComponent from "./component/ComponentTYPES/UncontrolledComponent";
 
 //HOC
-import HOC1 from "./component/HOC/HOC1"
+import HOC1 from "./component/HOC/HOC1";
 
 //React Routers
-import Basics from "./component/React_RouTers/Basics"
+import Basics from "./component/React_RouTers/Basics";
+import PageNotFound from "./component/React_RouTers/PageNotFound";
+
+//Dynamic__routing
+import Page1 from "./component/Dynamic__Routing/Page1";
+
+//Get API Method
+import GetMethod from "./component/GetApiMethod/GetMethod";
 
 function App() {
   const parentData = () => {
@@ -109,11 +116,17 @@ function App() {
       <UncontrolledComponent />
 
       {/* HOC */}
-      <HOC1/>
+      <HOC1 />
 
       {/* React Routers */}
+      <Basics />
+      <PageNotFound />
 
-      <Basics/>
+      {/* Dynamic__Routing */}
+      <Page1 />
+
+      {/* Get API Method */}
+      <GetMethod />
     </div>
   );
 }

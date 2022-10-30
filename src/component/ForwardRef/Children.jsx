@@ -1,9 +1,9 @@
 import React, { forwardRef } from "react";
 
-const Children = (props, ref) => {
+const Children = (props, reffs) => {
   return (
     <>
-      <input type="text" placeholder="data....." ref={ref} />
+      <input type="text" placeholder="data....." ref={reffs} />
     </>
   );
 };

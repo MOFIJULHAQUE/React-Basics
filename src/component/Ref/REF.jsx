@@ -13,6 +13,7 @@ export class REF extends Component {
   checkRef() {
     // console.log(this.inputRef);
     console.log(this.inputRef.current.value);
+    this.inputRef.current.value = "1021222221";
     this.inputRef.current.style.color = "black";
     this.inputRef.current.style.backgroundColor = "#ffff";
     this.inputRef.current.style.fontWeight = "bolder";

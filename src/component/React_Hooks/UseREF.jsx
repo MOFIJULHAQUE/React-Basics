@@ -3,12 +3,12 @@
 import React, { useRef } from "react";
 
 const UseREF = () => {
-  const inputRef = useRef(null);
+  const inputRef = useRef();
   const handleInput = () => {
     // alert("function called")
-    // inputRef.current.value = "10";
+    inputRef.current.value = "10";
     inputRef.current.style.backgroundColor = "#f78f";
-    inputRef.current.style.color = "#ffff";
+    inputRef.current.style.color = "black";
     inputRef.current.style.fontWeight = "bold";
     inputRef.current.style.border = "5px solid black";
     inputRef.current.focus();

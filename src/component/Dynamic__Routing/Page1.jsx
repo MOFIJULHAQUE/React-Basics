@@ -1,4 +1,3 @@
-
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Page2 from "./Page2";
@@ -14,7 +13,9 @@ const Page1 = () => {
   return (
     <>
       <Router>
-        <h1>React Dynamic Routing <b>(Still having doubt)</b> </h1>
+        <h1>
+          React Dynamic Routing <b>(Still having doubt)</b>{" "}
+        </h1>
 
         {Users.map((item) => {
           return (
@@ -26,9 +27,7 @@ const Page1 = () => {
           );
         })}
         <Routes>
-          <Route path="/user/:id" element={<Page2  data={Users}/>}/>
-            
-         
+          <Route path="/user/:id" element={<Page2 data={Users} />} />
         </Routes>
         <h1>------------------------------------------------- </h1>
       </Router>

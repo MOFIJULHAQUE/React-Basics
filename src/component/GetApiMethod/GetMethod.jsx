@@ -3,7 +3,7 @@ import { Table } from "react-bootstrap";
 const GetMethod = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("+").then((result) => {
+    fetch("").then((result) => {
       result.json().then((response) => {
         // console.log(response);
         setData(response);

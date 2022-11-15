@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import {screen,render} from "@testing-library/jest-dom";
+import Testing from "./component/Testing_/Testing";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("Name is present or not",()=>{
+    render(<Testing/>);
+    const checking = screen.getByText("Mofijul Haque");
+    expect(checking).toBeInTheDocument();
 });

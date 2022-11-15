@@ -59,6 +59,8 @@ import Page1 from "./component/Dynamic__Routing/Page1";
 //Get API Method
 import GetMethod from "./component/GetApiMethod/GetMethod";
 
+// PostApiMethod
+import PostApiMethod from "./component/PostApiMethod/PostApiMethod"
 function App() {
   const parentData = () => {
     alert("Data from paren(APP.js)");
@@ -127,6 +129,9 @@ function App() {
 
       {/* Get API Method */}
       <GetMethod />
+
+      {/* PostApiMethod */}
+      <PostApiMethod/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Table } from "react-bootstrap";
 const GetMethod = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("").then((result) => {
+    fetch("https://retoolapi.dev/2rYiON/data").then((result) => {
       result.json().then((response) => {
         // console.log(response);
         setData(response);
@@ -17,22 +17,18 @@ const GetMethod = () => {
       <Table striped bordered hover variant="dark">
         <tbody>
           <tr>
-            <th>id</th>
-            <th>Category</th>
-            <th>Title</th>
-            <th>Image</th>
-            <th>Description</th>
-            <th>Price</th>
+            <th>User Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone No.</th>
           </tr>
           {data.map((item) => {
             return (
               <tr>
                 <td>{item.id}</td>
-                <td>{item.category.toUpperCase()}</td>
-                <td>{item.title.slice(0,20).toUpperCase()}</td>
-                <td>{item.image}</td>
-                <td>{item.description.slice(0,20)}</td>
-                <td>{item.price}</td>
+                <td>{item.name }</td>
+                <td>{item.email }</td>
+                <td>{item.contact }</td>
               </tr>
             );
           })}

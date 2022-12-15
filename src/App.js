@@ -61,6 +61,17 @@ import GetMethod from "./component/GetApiMethod/GetMethod";
 
 // PostApiMethod
 import PostApiMethod from "./component/PostApiMethod/PostApiMethod"
+
+//All HOOks
+import AllHooks from "./component/ALL_HOOKS/AllHooks";
+
+
+
+
+
+
+
+
 function App() {
   const parentData = () => {
     alert("Data from paren(APP.js)");
@@ -132,6 +143,9 @@ function App() {
 
       {/* PostApiMethod */}
       <PostApiMethod/>
+
+      {/* All Hooks ---- */}
+      <AllHooks/>
     </div>
   );
 }
